@@ -1,6 +1,8 @@
 // Copyright 2021 Manna Harbour
 // https://github.com/manna-harbour/miryoku
 
+#define MIRYOKU_KEYBOARD_CORNE
+
 #define XXX &none
 
 #define MIRYOKU_LAYOUTMAPPING_CORNE( \
@@ -29,5 +31,3 @@
 
 #define MIRYOKU_KLUDGE_TAPDELAY
 #define MIRYOKU_CLIPBOARD_WIN 
-
-#define MIRYOKU_MAPPING MIRYOKU_LAYOUTMAPPING_CORNE
