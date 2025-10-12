@@ -1,12 +1,23 @@
 # Copyright 2022 Manna Harbour
 # https://github.com/manna-harbour/miryoku
 
-name: 'Build Example corne nice_nano_v2 nice_view'
+name: 'Build Example corne nice_nano_v2 nice_view with Prospector Dongle'
 on: workflow_dispatch
 jobs:
   build:
     uses: ./.github/workflows/main.yml
     secrets: inherit
     with:
-      board: '["nice_nano_v2"]'
-      shield: '["corne_left nice_view_adapter nice_view","corne_right nice_view_adapter nice_view"]'
+      board: '["nice_nano_v2", "seeeduino_xiao_ble"]'
+      shield: |
+        [
+          "corne_left nice_view_adapter nice_view",
+          "corne_right nice_view_adapter nice_view",
+          "corne_dongle prospector_adapter"
+        ]
+      alphas: 'QWERTY'
+      layers: 'flip'
+      kconfig: '["CONFIG_ZMK_DISPLAY=y\nCONFIG_ZMK_BLE_EXPERIMENTAL_CONN=y\nCONFIG_BT_CTLR_TX_PWR_PLUS_8=y"]'
+      custom_config: '["#define MIRYOKU_KLUDGE_TAPDELAY\n#define MIRYOKU_CLIPBOARD_MAC"]'
+      modules: '["carrefinho/prospector-zmk-module/main"]' 
+    
