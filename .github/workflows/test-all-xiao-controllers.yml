@@ -13,4 +13,4 @@ jobs:
         "seeeduino_xiao",
         "seeeduino_xiao_ble"
       ]'
-      shield: '["hummingbird", "corne_dongle"]'
+      shield: '["hummingbird"]'
