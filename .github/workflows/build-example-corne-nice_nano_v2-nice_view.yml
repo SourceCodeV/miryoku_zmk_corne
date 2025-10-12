@@ -20,4 +20,8 @@ jobs:
       kconfig: '["CONFIG_ZMK_DISPLAY=y\nCONFIG_ZMK_BLE_EXPERIMENTAL_CONN=y\nCONFIG_BT_CTLR_TX_PWR_PLUS_8=y"]'
       custom_config: '["#define MIRYOKU_KLUDGE_TAPDELAY\n#define MIRYOKU_CLIPBOARD_MAC"]'
       modules: '["carrefinho/prospector-zmk-module/main"]' 
-    
+      branches: |
+        [
+          "default",
+          "settings_reset/seeeduino_xiao_ble/corne_dongle"
+        ]
