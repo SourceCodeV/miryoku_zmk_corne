@@ -10,13 +10,13 @@ jobs:
     with:
       board: '["nice_nano_v2", "seeeduino_xiao_ble"]'
       shield: |
-        [
+        '[
           "corne_left nice_view_adapter nice_view",
           "corne_right nice_view_adapter nice_view",
           "corne_dongle prospector_adapter"
-        ]
-      alphas: 'QWERTY'
-      layers: 'flip'
+        ]'
+      alphas: '["QWERTY"]'
+      layers: '["flip"]'
       kconfig: '["CONFIG_ZMK_DISPLAY=y\nCONFIG_ZMK_BLE_EXPERIMENTAL_CONN=y\nCONFIG_BT_CTLR_TX_PWR_PLUS_8=y"]'
       custom_config: '["#define MIRYOKU_KLUDGE_TAPDELAY\n#define MIRYOKU_CLIPBOARD_MAC"]'
       modules: '["carrefinho/prospector-zmk-module/main"]' 
