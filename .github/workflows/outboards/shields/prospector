@@ -3,5 +3,5 @@
 
 outboard_repository=carrefinho/prospector-zmk-module
 outboard_ref=main
-outboard_from=config
+outboard_from=boards/shields/prospector_adapter
 outboard_to=boards/shields/prospector_adapter
