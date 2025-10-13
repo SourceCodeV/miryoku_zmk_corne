@@ -13,7 +13,7 @@ jobs:
         [
           "corne_left nice_view_adapter nice_view",
           "corne_right nice_view_adapter nice_view",
-          "prospector_adapter_dongle"
+          "prospector_dongle"
         ]
       alphas: '["QWERTY"]'
       layers: '["flip"]'
