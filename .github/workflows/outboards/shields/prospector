@@ -1,7 +1,7 @@
 # Copyright 2024 Manna Harbour
 # https://github.com/manna-harbour/miryoku
 
-outboard_repository=carrefinho/prospector-zmk-module
+outboard_repository=SourceCodeV/prospector-zmk-module
 outboard_ref=main
-outboard_from=boards/shields/prospector_adapter
-outboard_to=boards/shields/prospector_adapter
+outboard_from=boards/shields/prospector
+outboard_to=boards/shields/prospector
